@@ -5,11 +5,12 @@
 
 #define INT_MIN 1  // min for random number generator
 #define INT_MAX 26 // max for random number generator
-
+/*Function generates a random char from A-Z*/
 char randChar(){
-    srand((unsigned)time(NULL));
-    int x = rand() % (INT_MAX + 1) + INT_MIN;
-    switch(x){
+    srand((unsigned)time(NULL)); //seeding the generator
+    int x = rand() % (INT_MAX + 1) + INT_MIN; //generating a random number
+    //Determining the letter that was chosen by the random num generator and returning it
+    switch(x){ 
         case 1: 
             return 'A';
         case 2:
@@ -63,8 +64,8 @@ char randChar(){
         case 26:
             return 'Z';
             default:
-            return '5';
+            return '\0';
     }
 
-    */
+    
 }
