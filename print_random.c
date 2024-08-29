@@ -7,9 +7,10 @@
 
 void rand_string(char *c, size_t size)
 {
+    char temp = randChar();
     for (int i = 0; i < size; i++)
     {
-        c[i] = randChar();
+        c[i] = temp;
     }
 }
 
@@ -22,14 +23,11 @@ char* rand_string_alloc(size_t size)
      return s;
 }
 
-
-
-
 int main(void){
     size_t x = 7;
     char * str = rand_string_alloc(x);
     if(str != NULL){
-        printf("The word is: %s\n" , str);
+        printf("The word is : %s\n" , str);
         free(str);
     }
     else {

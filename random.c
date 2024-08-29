@@ -6,15 +6,12 @@
 #define INT_MIN 1  // min for random number generator
 #define INT_MAX 26 // max for random number generator
 
-char * randChar(){
+char randChar(){
     srand((unsigned)time(NULL));
     int x = rand() % (INT_MAX + 1) + INT_MIN;
-    return NULL;
-
-    /*switch(x){
+    switch(x){
         case 1: 
-        result = 'A';
-            return &result;
+            return 'A';
         case 2:
             return 'B';
         case 3:
