@@ -9,9 +9,9 @@ int main()
 {
     int a;
     /* seed the randomizer */
-    srand((unsigned)time(NULL));
+    srand((unsigned)time(NULL)); 
     printf("Today's random word: ");
-    for (a = 0; a < 7; a++)
+    for (a = 0; a < 7; a++) //getting random char and displaying it to screen 7 times
         putchar(randchar());
     putchar('\n');
     return (0);
