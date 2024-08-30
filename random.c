@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
+/*Repository Link: https://github.com/AwoleVictor/3207-Lab-Introduction_F24-.git*/
 
 #define INT_MIN 1  // min for random number generator
 #define INT_MAX 26 // max for random number generator
