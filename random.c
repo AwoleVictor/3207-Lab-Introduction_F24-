@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <unistd.h>
-#include <time.h>
 #include <stdio.h>
 
 #define INT_MIN 1  // min for random number generator
 #define INT_MAX 26 // max for random number generator
 /*Function generates a random char from A-Z*/
-char randChar(){
-    srand((unsigned)time(NULL)); //seeding the generator
+char randchar(){
     int x = rand() % (INT_MAX + 1) + INT_MIN; //generating a random number
     //Determining the letter that was chosen by the random num generator and returning it
     switch(x){ 
